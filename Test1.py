@@ -30,7 +30,7 @@ def gaming2(name:str, liders):
     b = 0
     i = 1
     while b != a:
-        b = int(input(f"Угадай число от 1 до 10 попытка - {i} попытка...."))
+        b = int(input(f"Угадай число от 1 до 100 попытка - {i} попытка...."))
         if b > a:
             print("Искомое меньше...")
             i = i+1
@@ -52,7 +52,7 @@ def levaling(leval : str, name:str,liders):
     if leval == "1":
         gaming1(name,liders)
     elif leval == "2":
-        gaming2()
+        gaming2(name,liders)
     else:
         print("Нет такого варианта")
 
